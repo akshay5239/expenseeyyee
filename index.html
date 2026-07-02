@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Expense Eye</title>
-    <body style="background-color:black;">
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <style>
         body { font-family: Arial, sans-serif; background-color: #f4f4f4; }
@@ -163,7 +163,23 @@
         }
         
     </style>
+
+@media(max-width:768px){
+body{overflow-x:hidden;}
+.header{padding:20px 10px;}
+.header img{position:relative;left:0;top:0;width:70px;display:block;margin:auto;}
+.header h1{font-size:2rem;}
+.header p{font-size:1rem;}
+nav{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;padding:10px;}
+.slider{height:250px;}
+.images{display:flex;flex-wrap:wrap;justify-content:center;gap:15px;padding:20px;}
+.images img{width:90%;max-width:320px;height:200px;object-fit:cover;}
+.features{grid-template-columns:1fr;padding:20px;}
+.info-section,.contact-section,.creators-section{padding:20px;}
+}
+</style>
 </head>
+<body style="background-color:black;">
 <body>
 
     <div class="header">
@@ -172,12 +188,6 @@
         <p>Your personal expense tracker made simple and efficient!</p>
     </div>
 
-    <nav>
-        <a href="#">HOME PAGE</a>
-        <a href="#">GALLERY</a>
-        <a href="#">ABOUT</a>
-        <a href="#">EXPENSES</a>
-     </nav>
     
        <div class="gallery">
         <h2>Gallery</h2>
@@ -284,5 +294,5 @@
 </footer>
 
 </body>
-</html>   
+</html>
 
